@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b2838;
+            display: flex;
+        }
+
+        nav {
+            background-color: #171a21;
+            width: 250px;
+            padding-top: 50px;
+            position: fixed;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav iframe {
+            width: 100%;
+            height: 200px;
+            margin: 10px 0;
+        }
+
+        main {
+            margin-left: 260px;
+            padding: 50px;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: #171a21;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button onclick="document.getElementById('video1').style.display='block'; document.getElementById('video1').src='https://www.youtube.com/embed/01tU9XhdhF8'">The Binding of Isaac: Repentance</button>
+        <button onclick="document.getElementById('video2').style.display='block'; document.getElementById('video2').src='https://www.youtube.com/embed/5FTt7wa3Ccs'">Don't Starve Together</button>
+        <button onclick="document.getElementById('video3').style.display='block'; document.getElementById('video3').src='https://www.youtube.com/embed/NZ9wCeq9hts'">Project Zomboid</button>
+        <button onclick="document.getElementById('video4').style.display='block'; document.getElementById('video4').src='https://www.youtube.com/embed/9Uq8F4R9p9Y'">Counter-Strike 2</button>
+        <button onclick="document.getElementById('video5').style.display='block'; document.getElementById('video5').src='https://www.youtube.com/embed/aD1Ez5EVfpg'">Dying Light</button>
+        <button onclick="document.getElementById('video6').style.display='block'; document.getElementById('video6').src='https://www.youtube.com/embed/NWyZkHhaAEo'">Dying Light 2</button>
+        
+        <iframe id="video1" style="display:none" width="250" height="200" title="The Binding of Isaac: Repentance Trailer"></iframe>
+        <iframe id="video2" style="display:none" width="250" height="200" title="Don't Starve Together Trailer"></iframe>
+        <iframe id="video3" style="display:none" width="250" height="200" title="Project Zomboid Trailer"></iframe>
+        <iframe id="video4" style="display:none" width="250" height="200" title="Counter-Strike 2 Trailer"></iframe>
+        <iframe id="video5" style="display:none" width="250" height="200" title="Dying Light Trailer"></iframe>
+        <iframe id="video6" style="display:none" width="250" height="200" title="Dying Light 2 Trailer"></iframe>
+    </nav>
+</body>
+
+</html>
